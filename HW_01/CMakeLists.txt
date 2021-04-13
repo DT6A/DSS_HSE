@@ -7,6 +7,11 @@ include_directories(include)
 include_directories(../smhasher/src)
 include_directories(../xxHash)
 
+add_compile_options(
+        "$<$<CONFIG:DEBUG>:-O3;-g3;-ggdb>"
+)
+
+
 add_executable(HW_01
         include/csv_writer.hpp
         include/measure_utils.hpp
