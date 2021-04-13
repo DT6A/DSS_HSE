@@ -6,7 +6,7 @@
 
 namespace hashes_speed
 {
-  constexpr std::size_t TRIALS = 100000;
+  constexpr std::size_t TRIALS = 200000;
   constexpr std::size_t RANDOM_SEED = 0;
 
   void runTestsWithParams(std::size_t lowerBound, std::size_t upperBound,
